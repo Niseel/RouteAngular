@@ -10,6 +10,7 @@
   <p>Price: {{ product.price | currency }}</p>
   <p>{{ product.id }}</p>
   <p>{{ product.imageUrl }}</p>
+  <a [routerLink]="['/product/edit', product.id]">Edit</a>
 </div>
 
 <button (click)="backToList()">Back to list</button>
